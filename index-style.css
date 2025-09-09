@@ -1,0 +1,48 @@
+body{
+    display:grid;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.First-Page{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg,#000000,#060606);
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    width: 430px;
+    gap: 40px;
+    background-color: #161616;
+    position: relative;
+    top: -5.6%;
+    border-radius: 30px;
+    left: 36%;
+
+}
+
+@font-face {
+    font-family: "Cal-sans";
+    src: url(./Fonts/CalSans-Regular.ttf) format("truetype");
+}
+
+.Nav-link{
+    margin-top: 35px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Cal-sans";
+
+}
+.Text-1{
+    font-size: 27px;
+}
+.Text-2{
+    font-size: 27px;
+}
+.Text-3{
+    font-size:27px;
+}
