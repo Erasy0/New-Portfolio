@@ -29,6 +29,10 @@ body{
     font-family: "Cal-sans";
     src: url(./Fonts/CalSans-Regular.ttf) format("truetype");
 }
+@font-face {
+    font-family: "Poiret-one";
+    src: url(./Fonts/PoiretOne-Regular.ttf) format("truetype");
+}
 
 .Nav-link{
     margin-top: 35px;
@@ -39,10 +43,70 @@ body{
 }
 .Text-1{
     font-size: 27px;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
+
 }
 .Text-2{
     font-size: 27px;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
 }
 .Text-3{
     font-size:27px;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
+}
+.Text-1:hover{
+    transform: scale(1.2) perspective(500px) rotateY(26deg);
+    
+}
+.Text-2:hover{
+    transform: scale(1.2) perspective(500px) rotateY(-26deg);
+    
+}
+.Text-3:hover{
+    transform: scale(1.2) perspective(500px) rotateY(36deg);
+    
+}
+.Hello-txt-container{
+    position: relative;
+    margin-left: 60px;
+    margin-top: 40px;
+    
+}
+.Hello-txt-container p{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: "Poiret-one";
+
+}
+.Name-txt-container{
+    
+
+}
+.Name-txt-container p{
+    color: #FFFFFF;
+    font-size: 130px;
+    font-family: "Cal-sans";
+
+}
+.Name-txt{
+    margin-left: 59px;
+    position: absolute;
+    top: 5%;
+     text-shadow: 0 0 5px rgb(38, 38, 38),
+               0 0 10px rgb(43, 43, 43),
+               0 0 20px rgb(39, 39, 39),
+               0 0 40px rgb(44, 44, 44);
+    
+}
+.Surname-txt{
+    margin-left: 59px;
+    position: absolute;
+    top: 20%;
+     text-shadow: 0 0 5px rgb(19, 19, 19),
+               0 0 10px rgb(16, 16, 16),
+               0 0 20px rgb(9, 9, 9),
+               0 0 40px rgb(44, 44, 44);
 }
