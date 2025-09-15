@@ -1,6 +1,6 @@
 
  function copyEmail() {
-    const email = "yourname@example.com";
+    const email = "srastuserasy@gmail.com";
     navigator.clipboard.writeText(email).then(() => {
       showToast("📩 Email copied");
     });

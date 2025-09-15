@@ -1,24 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
 
-body{
+body,html{
+    height: 100%;
     display:grid;
     height: 100vh;
     margin: 0;
     padding: 0;
+    scroll-snap-type:  y mandatory;
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+
+}
+body::-webkit-scrollbar{
+    width: 0.4vw;
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(#a3a3a3,#1a1a1a);
+}
+body::-webkit-scrollbar-track{
+    background-color: #0e0e0e;
 }
 #vanta-bg{
+
   width: 100%;
   height: 100vh; 
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1
+  z-index: -1;
+  
+}
+section{
+    height: 100vh;
+    scroll-snap-align: start;
 }
 .First-Page{
-    height: 100vh;
     width: 100%;
     z-index: 1;
+    overflow-x: hidden;
+    perspective: 10px;
 }
 .nav-bar{
     display: flex;
@@ -28,11 +49,14 @@ body{
     height:100px;
     width: 430px;
     gap: 40px;
+    position: absolute;
     background-color: #161616;
-    position: relative;
     top: -5.6%;
     border-radius: 30px;
-    left: 36%;
+    left: 37%;
+    z-index: 99999;
+
+    
 
 }
 
@@ -83,7 +107,7 @@ body{
 .Hello-txt-container{
     position: relative;
     margin-left: 60px;
-    margin-top: 40px;
+    margin-top: 130px;
     
 }
 .Hello-txt-container p{
@@ -93,7 +117,7 @@ body{
 
 }
 .Name-txt-container{
-    
+
 
 }
 .Name-txt-container p{
@@ -125,10 +149,13 @@ body{
 .Icon-container{
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
     top: 5%;
     gap: 25px;
     left: 85%;
+    z-index: 99999;
+
+
 }
 .Gmail-icon img{
     height: 28px;
@@ -168,10 +195,10 @@ body{
     height: 50px;
     width: 150px;
     text-align: center;
-    box-shadow: inset 0 0 0 0.2px rgb(255, 255, 255);
+    box-shadow: inset 0 0 0 0.1px rgb(255, 255, 255);
     border-radius: 18px;
     font-family: "Cal-sans";
-    background: #0d0d0d;
+    background: rgb(13, 13, 13,0.6);
     color: #ffffff;
     font-size: 19px;
     border: 1px solid;
@@ -179,8 +206,10 @@ body{
     display: flex;
     justify-content: center;
     align-items:center;
-    transition: opacity 0.6s ease-in-out; 
+    transition: opacity 0.4s ease-in-out; 
     z-index: 9999;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
 }
  .toast.show {
     visibility: visible;
@@ -189,8 +218,8 @@ body{
  .Web-txt-container{
     height: 65px;
     width: 235px;
-    background: #0B0B0B;
-    box-shadow: inset 0 0 0 0.5px rgb(255, 255, 255);
+    background-color: rgb(11, 11, 11,0.55);
+    box-shadow: inset 0 0 0 0.5px rgb(255, 255, 255,0.9);
     font-family: "Alegreya Sans SC", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -203,12 +232,14 @@ body{
     position: fixed;
     top: 460px;
     left: 60px;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+
  }
  .UI-txt-container{
     height: 65px;
     width: 235px;
-    background: #0B0B0B;
-    box-shadow: inset 0 0 0 0.5px rgb(255, 255, 255);
+    box-shadow: inset 0 0 0 0.5px rgb(255, 255, 255,0.9);
     font-family: "Alegreya Sans SC", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -221,12 +252,14 @@ body{
     position: fixed;
     top: 460px;
     left: 330px;
+    background-color: rgb(11, 11, 11,0.55);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
  }
  .Graphic-txt-container{
     height: 65px;
     width: 235px;
-    background: #0B0B0B;
-    box-shadow: inset 0 0 0 0.5px rgb(255, 255, 255);
+    box-shadow: inset 0 0 0 0.5px rgb(255, 255, 255,0.9);
     font-family: "Alegreya Sans SC", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -238,8 +271,12 @@ body{
     border-radius: 50px;
     position: fixed;
     top: 460px;
-    left: 605px; 
- }
+    left: 605px;
+     background-color: rgb(11, 11, 11,0.55);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+ } 
+ 
 
  .scroll-txt img{
     position: fixed;
@@ -254,4 +291,37 @@ body{
  @keyframes bouncing-down{
      0%, 100% { transform: translateY(0); }
   50%      { transform: translateY(-12px); }
+ }
+
+ .Second-page{
+    height: 100vh;
+ }
+
+
+ .my-txt-container{
+    position: relative;
+    margin-left: 60px;
+    margin-top: 130px;
+    
+ }
+ .my-txt-container p{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: "Poiret-one";
+
+ }
+ .tech-txt-container p{
+     color: #FFFFFF;
+    font-size: 100px;
+    font-family: "Cal-sans";
+
+ }
+ .tech-txt-container{
+    margin-left: 59px;
+    position: relative;
+    top: -16%;
+     text-shadow: 0 0 5px rgb(38, 38, 38),
+               0 0 10px rgb(43, 43, 43),
+               0 0 20px rgb(39, 39, 39),
+               0 0 40px rgb(44, 44, 44);
  }
