@@ -310,7 +310,7 @@ section{
     align-items: center;
     justify-content: center;
     height:90px;
-    width: 260px;
+    width: 280px;
     gap: 20px;
     position: absolute;
     background-color: #161616;
@@ -661,6 +661,28 @@ section{
     overflow: hidden;
  }
 
+ .nav-bar-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    width: 430px;
+    gap: 40px;
+    position: absolute;
+    background-color: #161616;
+    top: -5.6%;
+    border-radius: 30px;
+    left: 37%;
+    z-index: 99999;
+
+    
+ }
+ 
+ .Icon-container-2{
+    display: none;
+}
+
 
  .my-txt-container{
     position: relative;
@@ -753,4 +775,111 @@ section{
         transform: translateX(-50%);
       }
 }
+ @media (max-width:600px){
+        .my-txt-container{
+    position: relative;
+    margin-left: 60px;
+    margin-top: 130px;
+    
+ }
+ .my-txt-container p{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Poiret-one";
+
+ }
+ .tech-txt-container p{
+     color: #FFFFFF;
+    font-size: 60px;
+    font-family: "Cal-sans";
+
+ }
+ .tech-txt-container{
+    margin-left: 57px;
+    position: relative;
+    top: -7%;
+     text-shadow: 0 0 5px rgb(38, 38, 38),
+               0 0 10px rgb(43, 43, 43),
+               0 0 20px rgb(39, 39, 39),
+               0 0 40px rgb(44, 44, 44);
+ }
+
+ .image-1{
+    height: 100px;
+    width: 100px;
+ }
+ .image-2{
+    height: 100px;
+    width: 100px;
+ }
+ .image-3{
+    height: 110px;
+    width: 100px;
+ }
+ .image-4{
+    height: 110px;
+    width: 100px;
+ }
+ .image-5{
+    height: 100px;
+    width: 100px;
+ }
+ .image-6{
+    height: 100px;
+    width: 100px;
+ }
+
+.image-7{
+    height: 100px;
+    width: 100px;
+}
+.image-8{
+    height: 100px;
+    width: 100px;
+}
+.image-9{
+    height:100px ;
+    width: 100px ;
+}
+.image-logo-container{
+    width: 100%;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    top: -2%;
+}
+ .nav-bar-2{
+    display: none;  
+ }
+
+ .Icon-container-2{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 90%;
+    gap: 25px;
+    left: 30%;
+    z-index: 99999;
+
+
+}
+.Gmail-icon img{
+    height: 28px;
+    width: 38px;
+    
+}
+.Linkedin-icon img{
+    height: 32px;
+    width: 38px;
+}
+.Github-icon img{
+    position: absolute;
+    top: -19%;
+    height: 45px;
+    width: 45px;
+}
+
+
+ }
 
