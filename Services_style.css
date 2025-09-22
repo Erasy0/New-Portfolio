@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
 body{
     height: 100vh;
     width: 100%;
     background: linear-gradient(100deg,#000000,#202020);
+    overflow: hidden;
 }
 
 .nav-bar{
@@ -156,3 +160,272 @@ body{
     visibility: visible;
     opacity: 1;
  }
+ .box-container{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    position: relative;
+    left: 9%;
+ }
+ .Web-dev-box{
+    width: 240px;
+    height: 320px;
+    background: linear-gradient(90deg,#000000,#0e0e0e);
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 25px;
+ }
+
+.web-dev-txt{
+     position: relative;
+    left: 8%;
+    top: 2%;
+    width: 180px;
+    height: 30px;
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 30px;
+    background-color: rgba(12, 12, 12, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+
+}
+ .web-dev-txt p{
+    position: relative;
+    left: 25%;
+    top: 12%;
+     color: #FFFFFF;
+      font-family: "Cal-sans";
+      font-size: 15px;
+ }
+.Web-icon{
+     position: relative;
+    top: -112%;
+    left: 5%;
+    height: 27px;
+    width: 27px;
+}
+.glow-box-web{
+    position: absolute;
+    top: -2.7%;
+    left: 5%;
+    height: 15px;
+    width: 15px;
+    background-color: #AE7100;
+    filter: blur(20px);
+}
+
+.web-txt{
+    position: relative;
+    color: #FFFFFF;
+     font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    top: 10%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+
+
+ .UI-design-txt{
+    position: relative;
+    left: 8%;
+    top: 2%;
+    width: 160px;
+    height: 30px;
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 30px;
+    background-color: rgba(12, 12, 12, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+
+ }
+ .UIUX-icon{
+    position: relative;
+    top: -117%;
+    left: 2%;
+    height: 29px;
+    width: 29px;
+ }
+.UI-txt{
+    position: relative;
+    color: #FFFFFF;
+     font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    top: 10%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+ .UI-design-txt p{
+    position: relative;
+    left: 25%;
+    top: 12%;
+     color: #FFFFFF;
+      font-family: "Cal-sans";
+      font-size: 15px;
+ }
+ .glow-box-ui{
+    position: absolute;
+    top: -6.7%;
+    left: 5%;
+    height: 15px;
+    width: 15px;
+    background-color: #1ABCFE;
+    filter: blur(20px);
+ }
+
+ .Sport-design-txt{
+     position: relative;
+    left: 8%;
+    top: 2%;
+    width: 160px;
+    height: 30px;
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 30px;
+    background-color: rgba(12, 12, 12, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+}
+.Sport-icon{
+     position: relative;
+    top: -110%;
+    left: 5%;
+    height: 27px;
+    width: 27px;
+}
+.sport-txt{
+     position: relative;
+    color: #FFFFFF;
+     font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    top: 10%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+ .Sport-design-txt p{
+    position: relative;
+    left: 25%;
+    top: 12%;
+     color: #FFFFFF;
+      font-family: "Cal-sans";
+      font-size: 15px;
+ }
+ .glow-box-sport{
+    position: absolute;
+    top: -6.7%;
+    left: 5%;
+    height: 15px;
+    width: 15px;
+    background-color: #D90000;
+    filter: blur(20px);
+ }
+
+ .Event-design-txt{
+    position: relative;
+    left: 8%;
+    top: 2%;
+    width: 160px;
+    height: 30px;
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 30px;
+    background-color: rgba(12, 12, 12, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+ }
+ .Event-design-txt p{
+    position: relative;
+     left: 25%;
+    top: 17%;
+     color: #FFFFFF;
+      font-family: "Cal-sans";
+      font-size: 15px;
+ }
+ .Event-icon{
+    position: relative;
+    top: -100%;
+    left: 5%;
+    height: 20px;
+    width: 20px;
+ }
+ .glow-box-event{
+     position: absolute;
+    top: 15%;
+    left: 5%;
+    height: 15px;
+    width: 15px;
+    background-color: #E518DE;
+    filter: blur(10px);
+ }
+ .Event-txt{
+     position: relative;
+    color: #FFFFFF;
+     font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    top: 10%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ }
+
+
+
+ .Sport-design-box{
+    width: 240px;
+    height: 320px;
+    background: linear-gradient(65deg,#000000,#0e0e0e);
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 25px;
+ }
+ .UI-design-box{
+    width: 240px;
+    height: 320px;
+    background: linear-gradient(100deg,#000000,#0e0e0e);
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 25px;
+
+ }
+ .Event-design-box{
+    width: 240px;
+    height: 320px;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+    background: linear-gradient(120deg,#000000,#0e0e0e);
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+ }
+ .Event-design-wrapper {
+  perspective: 1000px; /* Controls depth */
+  width: 240px;
+  height: 320px;
+}
+.Event-design-wrapper:hover .Event-design-box {
+  transform: rotateY(180deg); /* Flip effect */
+}
+.Event-front,
+.Event-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  backface-visibility: hidden; /* Hide when flipped */
+}
+.Event-front {
+  background: linear-gradient(120deg,#000000,#0e0e0e);
+}
+
+.Event-back {
+  background: linear-gradient(120deg,#1a1a1a,#000000);
+  transform: rotateY(180deg);
+}
