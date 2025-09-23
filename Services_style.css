@@ -167,13 +167,7 @@ body{
     position: relative;
     left: 9%;
  }
- .Web-dev-box{
-    width: 240px;
-    height: 320px;
-    background: linear-gradient(90deg,#000000,#0e0e0e);
-    box-shadow: inset 0 0 0 0.5px #FFFFFF;
-    border-radius: 25px;
- }
+
 
 .web-dev-txt{
      position: relative;
@@ -379,6 +373,16 @@ body{
  }
 
 
+ .Web-dev-box{
+    width: 240px;
+    height: 320px;
+    background: linear-gradient(90deg,#000000,#0e0e0e);
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+ }
 
  .Sport-design-box{
     width: 240px;
@@ -386,6 +390,9 @@ body{
     background: linear-gradient(65deg,#000000,#0e0e0e);
     box-shadow: inset 0 0 0 0.5px #FFFFFF;
     border-radius: 25px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
  }
  .UI-design-box{
     width: 240px;
@@ -393,12 +400,15 @@ body{
     background: linear-gradient(100deg,#000000,#0e0e0e);
     box-shadow: inset 0 0 0 0.5px #FFFFFF;
     border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
 
  }
  .Event-design-box{
     width: 240px;
     height: 320px;
-    transition: transform 0.8s ease;
+    transition: transform 0.8s ease-in-out;
     transform-style: preserve-3d;
     background: linear-gradient(120deg,#000000,#0e0e0e);
     box-shadow: inset 0 0 0 0.5px #FFFFFF;
@@ -421,11 +431,156 @@ body{
   border-radius: 25px;
   backface-visibility: hidden; /* Hide when flipped */
 }
+
+.Event-Image-glow{
+    position:absolute;
+    width: 105px;
+    height: 90px;
+    background-color: rgb(229, 24, 222,0.6);
+    filter: blur(30px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+
+.Event-Image{
+    height: 80px;
+    width: 95px;
+}
+
+
 .Event-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   background: linear-gradient(120deg,#000000,#0e0e0e);
 }
 
 .Event-back {
   background: linear-gradient(120deg,#1a1a1a,#000000);
   transform: rotateY(180deg);
+}
+
+.UI-design-wrapper{
+  perspective: 1000px; /* Controls depth */
+  width: 240px;
+  height: 320px;
+}
+.UI-design-wrapper:hover .UI-design-box{
+    transform: rotateY(180deg); 
+}
+.UI-front,
+.UI-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  backface-visibility: hidden;
+}
+
+.UI-Image{
+    height: 100px;
+    width: 100px;
+}
+.Image-UI-glow{
+    position: absolute;
+    background-color: rgb(26, 188, 254,0.5);
+    width: 95px;
+    height: 85px;
+    filter: blur(30px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+
+.UI-front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg,#000000,#0e0e0e);
+}
+.UI-back{
+   background: linear-gradient(120deg,#1a1a1a,#000000);
+   transform: rotateY(180deg);
+}
+.Sport-design-wrapper{
+  perspective: 1000px; /* Controls depth */
+  width: 240px;
+  height: 320px;
+}
+.Sport-design-wrapper:hover .Sport-design-box{
+     transform: rotateY(180deg); 
+}
+.Sport-front,
+.Sport-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  backface-visibility: hidden;
+}
+
+.Image-Sport{
+    width: 100px;
+    height: 90px;
+}
+.Image-Sport-glow{
+    position: absolute;
+    background-color: rgb(217, 0, 0,0.6);
+    filter: blur(30px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    height: 100px;
+    width: 90px;
+}
+.Sport-front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg,#000000,#0e0e0e);
+}
+.Sport-back{
+    background: linear-gradient(65deg,#000000,#0e0e0e);
+    transform: rotateY(180deg);
+}
+.Web-dev-wrapper{
+  perspective: 1000px; /* Controls depth */
+  width: 240px;
+  height: 320px;  
+}
+.Web-dev-wrapper:hover .Web-dev-box{
+    transform: rotateY(180deg); 
+}
+.Web-front,
+.Web-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  backface-visibility: hidden;
+}
+
+
+.Image-HTML{
+  height: 100px;
+  width: 100px;
+}
+.Image-HTML-glow{
+    position: absolute;
+    height: 100px;
+    width: 90px;
+    background-color: rgb(174, 113, 0,0.5);
+    filter: blur(30px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.Web-front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg,#000000,#0e0e0e);
+}
+.Web-back{
+    background: linear-gradient(90deg,#000000,#0e0e0e);
+    transform: rotateY(180deg);
 }
