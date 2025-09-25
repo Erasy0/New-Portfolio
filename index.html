@@ -9,12 +9,13 @@
     <title>Home Page</title>
 </head>
 <body>
+    <div id="toast" class="toast"> Email copied</div>
     <div id="vanta-bg"></div>
     <section class="First-Page">
         <nav class="nav-bar">
             <a href="#" class="Text-1 Nav-link">Project</a>
-            <a href="#" class="Text-2 Nav-link">About</a>
-            <a href="#" class="Text-3 Nav-link">Services</a>
+            <a href="./about.htmls" class="Text-2 Nav-link">About</a>
+            <a href="./Services.html" class="Text-3 Nav-link">Services</a>
         </nav>
         <div class="Hello-txt-container">
             <p>Hello I'm</p>
@@ -55,7 +56,7 @@
     <section class="Second-page">
           <nav class="nav-bar-2">
             <a href="#" class="Text-1 Nav-link">Project</a>
-            <a href="#" class="Text-2 Nav-link">About</a>
+            <a href="./about.html" class="Text-2 Nav-link">About</a>
             <a href="./Services.html" class="Text-3 Nav-link">Services</a>
         </nav>
         <div class="my-txt-container">
@@ -81,14 +82,14 @@
         <img class="image-4" src="./Icons/New HTML.png" alt="image of the Language HTML logo" title="HTML"></img>
         <img class="image-5" src="./Icons/icons8-blender-512.png" alt="image of the Blender logo" title="Blender"></img>
         <img class="image-6" src="./Icons/java-free-logo_svgstack_com_30491755710040.svg" alt="image of the language JAVA logo" title="JAVA"></img>
-        <img class="image-7" src="./Icons/javascript-js-seeklogo.png" alt="image of the Language Javascript logo" title="jAVASCRIPT"></img>
+        <img class="image-7" src="./Icons/javascript-js-seeklogo.png" alt="image of the Language Javascript logo" title="JAVASCRIPT"></img>
         <img class="image-8" src="./Icons/sql.png" alt="image of the Language SQL logo"  title="SQL"></img>
         <img class="image-9" src="./Icons/Figma-logo.svg" alt="image of the FIGMA  logo" title="FIGMA"></img>
        </div>
        </div>
        <div class="Icon-container-2">
             <div class="Gmail-icon">
-                <a><img src="./Icons/Gmail logo.png" alt="Gmail icon" onclick="copyEmail()"></img></a>
+                <img src="./Icons/Gmail logo.png" alt="Gmail icon" onclick="copyEmail()">
             </div>
             <div class="Linkedin-icon">
                 <a href="https://www.linkedin.com/in/erastus-shindinge-229983288/"><img src="./Icons/Linkedin logo.png" alt="Linkedin icon"></img></a>
@@ -97,6 +98,7 @@
                 <a href="https://github.com/Erasy0"><img src="./Icons/icons8-github-100.png" alt="Github icon"></img></a>
             </div>
             <div id="toast" class="toast"> Email copied</div>
+            <script src="./Copyemail.js"></script>
         </div>
         
     </section>

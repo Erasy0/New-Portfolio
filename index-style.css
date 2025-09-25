@@ -187,8 +187,8 @@ section{
 .toast{
     position: fixed;
     left: 700px;
-    visibility: hidden;
     opacity: 0;
+    visibility: hidden;
     height: 50px;
     width: 150px;
     text-align: center;
@@ -204,7 +204,7 @@ section{
     justify-content: center;
     align-items:center;
     transition: opacity 0.4s ease-in-out; 
-    z-index: 9999;
+    z-index: 99999;
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
 }
