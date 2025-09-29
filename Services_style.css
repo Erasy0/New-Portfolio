@@ -625,3 +625,558 @@ height: 40px;
     overflow: hidden;
 }
 
+@media(max-width:600px){
+    body,html{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(100deg,#000000,#202020);
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+    .nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height:90px;
+    width: 280px;
+    gap: 20px;
+    position: absolute;
+    background-color: #161616;
+    top: -5.6%;
+    border-radius: 30px;
+    left: 16%;
+    z-index: 99999;
+
+    
+ }
+
+
+ .Nav-link{
+    margin-top: 35px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Cal-sans";
+
+}
+.Text-1{
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
+
+}
+.Text-2{
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
+}
+.Text-3{
+    font-size:20px;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
+}
+.Icon-container{
+    display: none;
+}
+.service-txt{
+    position: relative;
+    left: 12%;
+    top: 1%;
+}
+
+.service-txt p{
+    color: #FFFFFF;
+    font-family: "Cal-sans";
+    font-size: 45px;
+}
+.offer-txt{
+  position: relative;
+  left: 40%;
+  top: -5.5%;
+
+}
+.offer-txt p{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Poiret-one";
+}
+ .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    left: -1%;
+    top: -5%;
+ }
+ .box-container > div {
+  flex: 0 0 calc(50% - 20px); /* 2 per row accounting for gap */
+  display: flex;
+  justify-content: center;
+}
+.Web-dev-wrapper,
+.UI-design-wrapper,
+.Sport-design-wrapper,
+.Event-design-wrapper {
+  flex: 0 0 calc(50% - 20px); 
+  margin-bottom: -10px; /* spacing below rows */
+}
+
+
+.web-dev-txt{
+     position: relative;
+    left: 8%;
+    top: 2%;
+    width: 140px;
+    height: 25px;
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 30px;
+    background-color: rgba(12, 12, 12, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+
+}
+ .web-dev-txt p{
+    position: relative;
+    left: 27%;
+    top: 12%;
+     color: #FFFFFF;
+      font-family: "Cal-sans";
+      font-size: 11px;
+ }
+.Web-icon{
+     position: relative;
+    top: -112%;
+    left: 5%;
+    height: 27px;
+    width: 27px;
+}
+.glow-box-web{
+    position: absolute;
+    top: -2.7%;
+    left: 5%;
+    height: 15px;
+    width: 15px;
+    background-color: #AE7100;
+    filter: blur(20px);
+}
+
+.web-txt{
+    position: relative;
+    color: #FFFFFF;
+     font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    top: 10%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+
+
+ .UI-design-txt{
+    position: relative;
+    left: 8%;
+    top: 2%;
+    width: 130px;
+    height: 30px;
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 30px;
+    background-color: rgba(12, 12, 12, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+
+ }
+ .UIUX-icon{
+    position: relative;
+    top: -100%;
+    left: 2%;
+    height: 27px;
+    width: 27px;
+ }
+.UI-txt{
+    position: relative;
+    color: #FFFFFF;
+     font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    top: 10%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+ .UI-design-txt p{
+    position: relative;
+    left: 25%;
+    top: 16%;
+     color: #FFFFFF;
+      font-family: "Cal-sans";
+      font-size: 13px;
+ }
+ .glow-box-ui{
+    position: absolute;
+    top: -6.7%;
+    left: 5%;
+    height: 15px;
+    width: 15px;
+    background-color: #1ABCFE;
+    filter: blur(20px);
+ }
+
+ .Sport-design-txt{
+     position: relative;
+    left: 12%;
+    top: 1%;
+    width: 130px;
+    height: 25px;
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 30px;
+    background-color: rgba(12, 12, 12, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+}
+.Sport-icon{
+     position: relative;
+    top: -126%;
+    left: 5%;
+    height: 22px;
+    width: 22px;
+}
+.sport-txt{
+     position: relative;
+    color: #FFFFFF;
+     font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    top: 10%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+ .Sport-design-txt p{
+    position: relative;
+    left: 25%;
+    top: 12%;
+     color: #FFFFFF;
+      font-family: "Cal-sans";
+      font-size: 14px;
+ }
+ .glow-box-sport{
+    position: absolute;
+    top: -6.7%;
+    left: 5%;
+    height: 15px;
+    width: 15px;
+    background-color: #D90000;
+    filter: blur(20px);
+ }
+
+ .Event-design-txt{
+    position: relative;
+    left: 8%;
+    top: 2%;
+    width: 120px;
+    height: 25px;
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 30px;
+    background-color: rgba(12, 12, 12, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+ }
+ .Event-design-txt p{
+    position: relative;
+     left: 25%;
+    top: 15%;
+     color: #FFFFFF;
+      font-family: "Cal-sans";
+      font-size: 13px;
+ }
+ .Event-icon{
+    position: relative;
+    top: -110%;
+    left: 5%;
+    height: 20px;
+    width: 20px;
+ }
+ .glow-box-event{
+     position: absolute;
+    top: 15%;
+    left: 5%;
+    height: 15px;
+    width: 15px;
+    background-color: #E518DE;
+    filter: blur(10px);
+ }
+ .Event-txt{
+     position: relative;
+    color: #FFFFFF;
+     font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    top: 10%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ }
+
+
+ .Web-dev-box{
+    width: 160px;
+    height: 240px;
+    background: linear-gradient(90deg,#000000,#0e0e0e);
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+     transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+ }
+ 
+
+ .Sport-design-box{
+    width: 160px;
+    height: 240px;
+    background: linear-gradient(65deg,#000000,#0e0e0e);
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+ }
+ .UI-design-box{
+    width: 160px;
+    height: 240px;
+    background: linear-gradient(100deg,#000000,#0e0e0e);
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+
+ }
+ .Event-design-box{
+    width: 160px;
+    height: 240px;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    background: linear-gradient(120deg,#000000,#0e0e0e);
+    box-shadow: inset 0 0 0 0.5px #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+ }
+ .Event-design-wrapper {
+  perspective: 1000px; /* Controls depth */
+  width: 240px;
+  height: 320px;
+}
+.Event-design-wrapper:hover .Event-design-box {
+  transform: rotateY(180deg); /* Flip effect */
+}
+.Event-front,
+.Event-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  backface-visibility: hidden; /* Hide when flipped */
+}
+
+.Event-Image-glow{
+    position:absolute;
+    width: 105px;
+    height: 90px;
+    background-color: rgb(229, 24, 222,0.6);
+    filter: blur(30px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+
+.Event-Image{
+    height: 80px;
+    width: 95px;
+}
+
+
+.Event-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background: linear-gradient(120deg,#000000,#0e0e0e);
+}
+
+.Event-back {
+  background: linear-gradient(120deg,#1a1a1a,#000000);
+  transform: rotateY(180deg);
+}
+
+.UI-design-wrapper{
+  perspective: 1000px; /* Controls depth */
+  width: 240px;
+  height: 320px;
+}
+.UI-design-wrapper:hover .UI-design-box{
+    transform: rotateY(180deg); 
+}
+.UI-front,
+.UI-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  backface-visibility: hidden;
+}
+
+.UI-Image{
+    height: 100px;
+    width: 100px;
+}
+.Image-UI-glow{
+    position: absolute;
+    background-color: rgb(26, 188, 254,0.5);
+    width: 95px;
+    height: 85px;
+    filter: blur(30px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+
+.UI-front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg,#000000,#0e0e0e);
+}
+.UI-back{
+   background: linear-gradient(120deg,#1a1a1a,#000000);
+   transform: rotateY(180deg);
+}
+.Sport-design-wrapper{
+  perspective: 1000px; /* Controls depth */
+  width: 240px;
+  height: 320px;
+}
+.Sport-design-wrapper:hover .Sport-design-box{
+     transform: rotateY(180deg); 
+}
+.Sport-front,
+.Sport-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  backface-visibility: hidden;
+}
+
+.Image-Sport{
+    width: 100px;
+    height: 90px;
+}
+.Image-Sport-glow{
+    position: absolute;
+    background-color: rgb(217, 0, 0,0.6);
+    filter: blur(30px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    height: 100px;
+    width: 90px;
+}
+.Sport-front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg,#000000,#0e0e0e);
+}
+.Sport-back{
+    background: linear-gradient(65deg,#000000,#0e0e0e);
+    transform: rotateY(180deg);
+}
+.Web-dev-wrapper{
+  perspective: 1000px; /* Controls depth */
+  width: 240px;
+  height: 320px;  
+}
+.Web-dev-wrapper:hover .Web-dev-box{
+    transform: rotateY(180deg); 
+}
+.Web-front,
+.Web-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  backface-visibility: hidden;
+}
+
+
+.Image-HTML{
+  height: 100px;
+  width: 100px;
+}
+.Image-HTML-glow{
+    position: absolute;
+    height: 100px;
+    width: 90px;
+    background-color: rgb(174, 113, 0,0.5);
+    filter: blur(30px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.Web-front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg,#000000,#0e0e0e);
+}
+
+.Web-back{
+    position: relative;
+    background: linear-gradient(90deg,#000000,#0e0e0e);
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.Home-button-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 15px;
+  box-shadow: inset 0 0 0 1px #BBBBBB ,
+               0 0 10px rgba(255, 255, 255, 0.3)
+  ;
+  top:10% ;
+  left: 80%;
+  height: 40px;
+  width: 40px;
+  background: #000000;
+  z-index: 99999;
+  animation: bounce-1 1.4s ease infinite;
+}
+
+@keyframes bounce-1{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+.Icon-home{
+width: 28px;
+height: 30px;
+}
+
+}
