@@ -474,13 +474,13 @@ section{
     align-items: center;
     justify-content: center;
     height:90px;
-    width: 250px;
+    width: 280px;
     gap: 20px;
     position: absolute;
-    background-color: #161616;
+     background-color: #242424;
     top: -5.6%;
     border-radius: 30px;
-    left: 20%;
+    left: 15%;
     z-index: 99999;
 
     
