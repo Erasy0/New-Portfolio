@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 body{
     height: 100vh;
     width: 100%;
@@ -108,6 +109,67 @@ height: 30px;
     color: #FFFFFF;
     font-size: 80px;
     font-family: "Cal-sans";
+}
+.Bio-container{
+    height: 240px;
+    display: flex;
+    width: 450px;
+    background: linear-gradient(190deg,#0a0a0a,#080808);
+    box-shadow: inset 0 0 0 0.8px #BBBBBB;
+    border-radius: 35px;
+    position: relative;
+    left: 2.5%;
+    bottom: 11%;
+}
+.Selfie-image{
+    height: 90px;
+    width: 90px;
+    border-radius: 90px;
+    position: relative;
+    left: 4%;
+    top: 22%;
+}
+
+.Bio-text-container{
+    position: relative;
+    left: 6%;
+    top: 7%;
+}
+.Bio-text-container p{
+     font-size: 21px;
+     color: #FFFFFF;
+     font-family: "Red Hat Text", sans-serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+}
+.Social-media-container{
+    height: 120px;
+    width: 470px;
+    background: linear-gradient(190deg,#0a0a0a,#080808);
+    box-shadow: inset 0 0 0 0.8px #BBBBBB;
+    border-radius: 35px;
+    position: relative;
+    bottom: 44%;
+    left: 37%;
+}
+.Social-media-txt{
+    position: relative;
+    left: 4%;
+    top: 34%;
+    font-family: "Cal-sans";
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.Break-line-social{
+      border: none;
+  height: 0.4px;       
+  width: 12%;         
+  background: #ccc;    
+  border-radius: 2px;  
+  transform: rotate(90deg);
+  position: relative;
+  right: 15%;
+  top: 3%;
 }
 
 
