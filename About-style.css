@@ -101,7 +101,7 @@ height: 30px;
 }
 .About-txt-container{
     position: relative;
-    top: -5%;
+    top: -12%;
     left: 3%;
 }
 
@@ -111,7 +111,7 @@ height: 30px;
     font-family: "Cal-sans";
 }
 .Bio-container{
-    height: 240px;
+    height: 260px;
     display: flex;
     width: 450px;
     background: linear-gradient(190deg,#0a0a0a,#080808);
@@ -119,7 +119,7 @@ height: 30px;
     border-radius: 35px;
     position: relative;
     left: 2.5%;
-    bottom: 11%;
+    bottom: 18%;
 }
 .Selfie-image{
     height: 90px;
@@ -144,12 +144,12 @@ height: 30px;
 }
 .Social-media-container{
     height: 120px;
-    width: 470px;
+    width: 580px;
     background: linear-gradient(190deg,#0a0a0a,#080808);
     box-shadow: inset 0 0 0 0.8px #BBBBBB;
     border-radius: 35px;
     position: relative;
-    bottom: 44%;
+    bottom: 54%;
     left: 37%;
 }
 .Social-media-txt{
@@ -163,19 +163,87 @@ height: 30px;
 .Break-line-social{
       border: none;
   height: 0.4px;       
-  width: 12%;         
+  width: 10%;         
   background: #ccc;    
   border-radius: 2px;  
   transform: rotate(90deg);
   position: relative;
-  right: 15%;
+  right: 22%;
   top: 3%;
 }
+.Instagram-icon{
+    height: 45px;
+    width: 45px;
+    position: relative;
+    left: 30%;
+    bottom: 22%;
+}
+.Instagram-txt{
+    color: #BBBBBB;
+   font-family:"Poiret-one";
+   font-size: 20px;
+   position: relative;
+   bottom: 36%;
+   left: 30%;
+   text-decoration: none;
+}
 
+.Behance-icon{
+    height: 36px;
+    width: 36px;
+    position: relative;
+    left: 32%;
+    bottom: 26%;
+}
 
-
-
-
+.Behance-txt{
+    color: #BBBBBB;
+    font-size: 20px;
+    font-family:"Poiret-one";
+    text-decoration: none;
+    position: relative;
+    bottom: 36%;
+    left: 34%;
+}
+.Intrest-container{
+    height: 115px;
+    width: 580px;
+    background: linear-gradient(190deg,#0a0a0a,#080808);
+    box-shadow: inset 0 0 0 0.8px #BBBBBB;
+    position: relative;
+    bottom: 50%;
+    left: 37%;
+    border-radius: 35px;
+}
+.Intrest-txt{
+position: relative;
+    left: 4%;
+    top: 34%;
+    font-family: "Cal-sans";
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.Break-line-Interest{
+       border: none;
+  height: 0.4px;       
+  width: 10%;         
+  background: #ccc;    
+  border-radius: 2px;  
+  transform: rotate(90deg);
+  position: relative;
+  right: 27%;
+  top: 1%;
+}
+ 
+.flex-wrapper{
+    display: flex;
+    position: relative;
+}
+.Reading-box{
+    height: 90px;
+    width: 100;
+    background: #c5c5c5;
+}
 
 
 
