@@ -425,13 +425,13 @@ position: relative;
 .Facts-container{
     height: 110px;
     display: flex;
-    width: 750px;
+    width: 900px;
     background: linear-gradient(270deg,#0a0a0a,#0f0f0f);
     box-shadow: inset 0 0 0 0.8px #BBBBBB;
     border-radius: 35px;
     position: relative;
     bottom: 67.8%;
-    left: 22%;
+    left:22%;
     
 }
 .Facts-about-txt{
@@ -478,7 +478,18 @@ position: relative;
 
 
 @media(max-width:600px){
-        .nav-bar{
+
+
+    body{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(100deg,#000000,#202020);
+    margin: 0;
+    padding: 0;
+
+}
+    .nav-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -518,4 +529,338 @@ position: relative;
     transition: transform 0.3s ease-in-out;
     transform-style: preserve-3d;
 }
+.Home-button-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 15px;
+  box-shadow: inset 0 0 0 1px #BBBBBB ,
+               0 0 10px rgba(255, 255, 255, 0.3)
+  ;
+  top:90px;
+  left: 80%;
+  height: 40px;
+  width: 40px;
+  background: #000000;
+  z-index: 99999;
+  animation: bounce-1 1.4s ease infinite;
+}
+.Icon-home{
+width: 20px;
+height: 20px;
+}
+
+.About-txt-container{
+    position: relative;
+    top: -12%;
+    left: 8%;
+}
+
+.About-txt-container p{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: "Cal-sans";
+}
+.Bio-container{
+    height: 190px;
+    display: flex;
+    width: 380px;
+   background: linear-gradient(200deg,#0a0a0a,#0b0b0b);
+    box-shadow: inset 0 0 0 0.8px #BBBBBB;
+    border-radius: 35px;
+    position: relative;
+    left: 2.5%;
+    bottom: 28%;
+}
+.Selfie-image{
+    height: 70px;
+    width: 70px;
+    border-radius: 90px;
+    position: relative;
+    left: 4%;
+    top: 22%;
+}
+
+.Bio-text-container{
+    position: relative;
+    left: 5%;
+    top: 15%;
+}
+.Bio-text-container p{
+     font-size: 16px;
+     color: #FFFFFF;
+     font-family: "Red Hat Text", sans-serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+}
+
+.Social-media-container{
+    height: 180px;
+    width: 350px;
+    background: linear-gradient(200deg,#0a0a0a,#0b0b0b);
+    box-shadow: inset 0 0 0 0.8px #BBBBBB;
+    border-radius: 35px;
+    position: relative;
+    bottom: 57%;
+    left: 4%;
+}
+.Social-media-txt{
+    position: relative;
+    left: 4%;
+    top: 16%;
+    font-family: "Cal-sans";
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.Break-line-social{
+ display: none;
+}
+.Instagram-icon{
+    height: 45px;
+    width: 45px;
+    position: relative;
+    left: 6%;
+    bottom: -8%;
+}
+.Instagram-txt{
+    color: #BBBBBB;
+   font-family:"Poiret-one";
+   font-size: 20px;
+   position: relative;
+   bottom: 3%;
+   left: 7%;
+   text-decoration: none;
+}
+
+.Behance-icon{
+    height: 36px;
+    width: 36px;
+    position: relative;
+    left: -39%;
+    bottom: -35%;
+}
+
+.Behance-txt{
+    color: #BBBBBB;
+    font-size: 20px;
+    font-family:"Poiret-one";
+    text-decoration: none;
+    position: relative;
+    bottom: -28%;
+    left: -37%;
+}
+.Intrest-container{
+    height: 230px;
+    width: 340px;
+    background: linear-gradient(200deg,#0a0a0a,#0b0b0b);
+    box-shadow: inset 0 0 0 0.8px #BBBBBB;
+    position: relative;
+    bottom: 57%;
+    left: 4%;
+    border-radius: 35px;
+}
+.Intrest-txt{
+    position: relative;
+    left: 4%;
+    top: 14%;
+    font-family: "Cal-sans";
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.Break-line-Interest{
+display: none;
+}
+ 
+.flex-wrapper{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    left: 4%;
+    bottom: -10%;
+}
+.Reading-box{
+    height: 35px;
+    width: 120px;
+    border-radius: 50px;
+    background: #1a1a1a;
+}
+.Book-icon{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: 12%;
+    top: 16%;
+}
+.Reading-box p{
+    position: relative;
+    left: 35%;
+    bottom: 117%;
+    color: #BBBBBB;
+    font-size: 20px;
+    font-family:"Poiret-one";
+}
+.Gaming-box{ 
+    height: 35px;
+    width: 128px;
+    border-radius: 50px;
+    background: #1a1a1a;
+}
+.Controller-icon{
+    height: 23px;
+    width: 23px;
+    position: relative;
+    left: 12%;
+    top: 16%;
+}
+.Gaming-box p{
+    position: relative;
+    left: 38%;
+    bottom: 124%;
+    color: #BBBBBB;
+    font-size: 20px;
+    font-family:"Poiret-one";
+}
+.Volleyball-box{
+    height: 35px;
+    width: 140px;
+    border-radius: 50px;
+    background: #1a1a1a;
+}
+.Volleball-icon{
+    height: 22px;
+    width: 22px;
+    position: relative;
+    left: 12%;
+    top: 16%;
+}
+.Volleyball-box p{
+    position: relative;
+    left: 32%;
+    bottom: 120%;
+    color: #BBBBBB;
+    font-size: 20px;
+    font-family:"Poiret-one";
+}
+.contacts-container{
+     height: 115px;
+    display: flex;
+    width: 580px;
+    background: linear-gradient(270deg,#0a0a0a,#0f0f0f);
+    box-shadow: inset 0 0 0 0.8px #BBBBBB;
+    border-radius: 35px;
+    position: relative;
+    left: 37.1%;
+    bottom: 71%;
+}
+.Contacts-txt{
+    position: relative;
+    left: 4%;
+    top: 22%;
+    font-family: "Cal-sans";
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.Break-line-contact{
+  border: none;
+  height: 0.4px;       
+  width: 10%;         
+  background: #ccc;    
+  border-radius: 2px;  
+  transform: rotate(90deg);
+  position: relative;
+  right: 3%;
+  top: 42%;
+}
+.Whatsapp-icon{
+    height: 45px;
+    width: 45px;
+    position: relative;
+    right: 10%;
+    top: 28%;
+}
+.Phone-txt{
+    position: relative;
+    font-family:"Poiret-one";
+    color: #c5c5c5;
+    font-size: 16px;
+    right: 8%;
+    top: 25%;
+}
+.Gmail-icon-contacts{
+    height: 45px;
+    width: 45px;
+    position: relative;
+    right: 4%;
+    top: 24%;
+}
+.Email-txt{
+    font-family:"Poiret-one";
+    color: #c5c5c5;
+    font-size: 18px;
+    position: relative;
+    right: 2%;
+    top: 23%;
+}
+
+.Experience-container{
+    height: 180px;
+    display: flex;
+    width: 450px;
+  background: linear-gradient(200deg,#0a0a0a,#0b0b0b);
+    box-shadow: inset 0 0 0 0.8px #BBBBBB;
+    border-radius: 35px;
+    position: relative;
+    left: 2.5%;
+    bottom: 55%;
+}
+.Exp-txt{
+     color: #FFFFFF;
+    font-family: "Cal-sans";
+    font-size: 28px;
+    left: 4%;
+    top: -6%;
+    position: relative;
+}
+.Edutec-logo{
+    height: 70px ;
+    width: 70px;
+    position: relative;
+    right: 29%;
+    top: 35%;
+}
+.Edutec-txt{
+  font-family: "Cal-sans";
+  font-size: 19px;
+  color: #FFFFFF;
+  position: relative;
+  right: 32%;
+  top: 27%;
+  white-space: nowrap;
+}
+.Job-title{
+    color: #c5c5c5;
+    font-size: 18px;
+    font-family:"Poiret-one";
+    white-space: nowrap;
+    position: relative;
+    right: 58%;
+    top: 42%;
+}
+.Job-duration{
+    color: #c5c5c5;
+    font-size: 15px;
+    font-family:"Poiret-one";
+    white-space: nowrap;
+    position: relative;
+    right: 113%;
+    top: 56%;
+}
+
 }
