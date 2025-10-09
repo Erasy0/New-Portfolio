@@ -683,7 +683,7 @@ height: 40px;
 .service-txt{
     position: relative;
     left: 12%;
-    top: 1%;
+    top: -2%;
 }
 
 .service-txt p{
@@ -694,7 +694,7 @@ height: 40px;
 .offer-txt{
   position: relative;
   left: 42%;
-  top: -5.9%;
+  top: -9%;
 
 }
 .offer-txt p{
@@ -709,7 +709,7 @@ height: 40px;
     justify-content: center;
     position: relative;
     left: -1%;
-    top: -5%;
+    top: -9.7%;
  }
  .box-container > div {
   flex: 0 0 calc(50% - 20px); /* 2 per row accounting for gap */
@@ -1181,8 +1181,8 @@ height: 40px;
 }
 
 .Icon-home{
-width: 28px;
-height: 30px;
+width: 24px;
+height: 24px;
 }
 
 }

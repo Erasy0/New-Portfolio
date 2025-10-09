@@ -480,13 +480,15 @@ position: relative;
 @media(max-width:600px){
 
 
-    body{
-    overflow-x: hidden;
-    height: 100%;
+    body,html{
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;   
+    height: auto;       
     background: linear-gradient(100deg,#000000,#202020);
     margin: 0;
     padding: 0;
+    bottom: 0;
 
 }
     .nav-bar{
@@ -497,7 +499,7 @@ position: relative;
     height:90px;
     width: 280px;
     gap: 20px;
-    position: absolute;
+    position: fixed;
     background-color: #161616;
     top: -5.6%;
     border-radius: 30px;
@@ -530,7 +532,7 @@ position: relative;
     transform-style: preserve-3d;
 }
 .Home-button-container{
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -550,14 +552,14 @@ position: relative;
   animation: bounce-1 1.4s ease infinite;
 }
 .Icon-home{
-width: 20px;
-height: 20px;
+width: 24px;
+height: 24px;
 }
 
 .About-txt-container{
     position: relative;
-    top: -12%;
-    left: 8%;
+    top: 24px;
+    left: 7%;
 }
 
 .About-txt-container p{
@@ -568,7 +570,7 @@ height: 20px;
 .Bio-container{
     height: 190px;
     display: flex;
-    width: 380px;
+    width: 368px;
    background: linear-gradient(200deg,#0a0a0a,#0b0b0b);
     box-shadow: inset 0 0 0 0.8px #BBBBBB;
     border-radius: 35px;
@@ -591,7 +593,7 @@ height: 20px;
     top: 15%;
 }
 .Bio-text-container p{
-     font-size: 16px;
+     font-size: 15px;
      color: #FFFFFF;
      font-family: "Red Hat Text", sans-serif;
      font-optical-sizing: auto;
@@ -606,7 +608,7 @@ height: 20px;
     border-radius: 35px;
     position: relative;
     bottom: 57%;
-    left: 4%;
+    left: 3%;
 }
 .Social-media-txt{
     position: relative;
@@ -640,7 +642,7 @@ height: 20px;
     height: 36px;
     width: 36px;
     position: relative;
-    left: -39%;
+    left: -40%;
     bottom: -35%;
 }
 
@@ -749,82 +751,76 @@ display: none;
     font-family:"Poiret-one";
 }
 .contacts-container{
-     height: 115px;
+    height: 200px;
     display: flex;
-    width: 580px;
+    width: 350px;
     background: linear-gradient(270deg,#0a0a0a,#0f0f0f);
     box-shadow: inset 0 0 0 0.8px #BBBBBB;
     border-radius: 35px;
     position: relative;
-    left: 37.1%;
-    bottom: 71%;
+    left: 3.7%;
+    bottom:150px;
 }
 .Contacts-txt{
     position: relative;
     left: 4%;
-    top: 22%;
+    top: 3%;
     font-family: "Cal-sans";
     font-size: 22px;
     color: #FFFFFF;
 }
 .Break-line-contact{
-  border: none;
-  height: 0.4px;       
-  width: 10%;         
-  background: #ccc;    
-  border-radius: 2px;  
-  transform: rotate(90deg);
-  position: relative;
-  right: 3%;
-  top: 42%;
+  display: none;
 }
 .Whatsapp-icon{
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     position: relative;
-    right: 10%;
-    top: 28%;
+    right: 21%;
+    top: 36%;
 }
 .Phone-txt{
     position: relative;
     font-family:"Poiret-one";
     color: #c5c5c5;
     font-size: 16px;
-    right: 8%;
-    top: 25%;
+    right: 15%;
+    top: 32%;
+    white-space: nowrap;
 }
 .Gmail-icon-contacts{
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     position: relative;
-    right: 4%;
-    top: 24%;
+    right: 68%;
+    top: 68%;
+    
 }
 .Email-txt{
     font-family:"Poiret-one";
     color: #c5c5c5;
     font-size: 18px;
     position: relative;
-    right: 2%;
-    top: 23%;
+    right: 63%;
+    top: 62%;
 }
 
 .Experience-container{
     height: 180px;
     display: flex;
-    width: 450px;
+    width: 340px;
   background: linear-gradient(200deg,#0a0a0a,#0b0b0b);
     box-shadow: inset 0 0 0 0.8px #BBBBBB;
     border-radius: 35px;
     position: relative;
-    left: 2.5%;
-    bottom: 55%;
+    left: 16px;
+    bottom: -260px;
 }
 .Exp-txt{
      color: #FFFFFF;
     font-family: "Cal-sans";
     font-size: 28px;
-    left: 4%;
+    left: 6%;
     top: -6%;
     position: relative;
 }
@@ -832,7 +828,7 @@ display: none;
     height: 70px ;
     width: 70px;
     position: relative;
-    right: 29%;
+    right: 39%;
     top: 35%;
 }
 .Edutec-txt{
@@ -840,7 +836,7 @@ display: none;
   font-size: 19px;
   color: #FFFFFF;
   position: relative;
-  right: 32%;
+  right: 40%;
   top: 27%;
   white-space: nowrap;
 }
@@ -850,7 +846,7 @@ display: none;
     font-family:"Poiret-one";
     white-space: nowrap;
     position: relative;
-    right: 58%;
+    right: 75%;
     top: 42%;
 }
 .Job-duration{
@@ -859,8 +855,40 @@ display: none;
     font-family:"Poiret-one";
     white-space: nowrap;
     position: relative;
-    right: 113%;
+    right: 148%;
     top: 56%;
+}
+.Facts-container{
+    height: 80px;
+    display: flex;
+    width: 350px;
+    background: linear-gradient(270deg,#0a0a0a,#0f0f0f);
+    box-shadow: inset 0 0 0 0.8px #BBBBBB;
+    border-radius: 30px;
+    position: relative;
+    bottom: -90px;
+    left:17px;
+    
+}
+.Facts-about-txt{
+    color: #ffffff;
+    font-size: 17px;
+    font-family: "Cal-sans";
+    position: relative;
+    left: 7%;
+    top:-4%;
+    white-space: nowrap;
+}
+#Facts-txt{
+    position: relative;
+    top: 32%;
+    left: -27%;
+    font-size: 12px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    font-family:"Poiret-one";
+    opacity: 0;
+   transition: opacity 1s ease-in-out;
 }
 
 }
