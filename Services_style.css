@@ -624,6 +624,9 @@ height: 40px;
     border-radius: 10px;
     overflow: hidden;
 }
+ .Web-dev-box,.Event-design-box,.UI-design-box,.Sport-design-box{
+    border: #BBBBBB 0.1px solid;
+ }
 
 @media(max-width:600px){
     body,html{
