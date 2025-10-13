@@ -1,11 +1,20 @@
-body,html{
+body{
     height: 100%;
     width: 100%;
     background: linear-gradient(100deg,#000000,#202020);
-    overflow-x: hidden; 
-    scroll-behavior: smooth;
-    overflow-y: visible;
+    overflow-x: hidden;
 }
+
+body::-webkit-scrollbar{
+    width: 0.4vw;
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(#a3a3a3,#1a1a1a);
+}
+body::-webkit-scrollbar-track{
+    background-color: #0e0e0e;
+}
+
 
 .nav-bar{
     display: flex;
@@ -15,7 +24,7 @@ body,html{
     height:100px;
     width: 430px;
     gap: 40px;
-    position: absolute;
+    position: fixed;
     background-color: #161616;
     top: -5.6%;
     border-radius: 30px;
@@ -23,7 +32,7 @@ body,html{
     z-index: 99999;
 }
 .Home-button-container{
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,10 +43,10 @@ body,html{
   box-shadow: inset 0 0 0 1px #BBBBBB ,
                0 0 10px rgba(255, 255, 255, 0.3)
   ;
-  top:22% ;
+  top:120px ;
   left: 80%;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   background: #000000;
   z-index: 99999;
   animation: bounce-1 1.4s ease infinite;
@@ -53,8 +62,8 @@ body,html{
 }
 
 .Icon-home{
-width: 30px;
-height: 34px;
+width: 25px;
+height: 25px;
 }
 
 @font-face {
@@ -104,7 +113,7 @@ height: 34px;
 .Icon-container{
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: absolute;
     top: 5%;
     gap: 25px;
     left: 85%;
@@ -171,6 +180,19 @@ height: 34px;
     opacity: 1;
  }
 
+.gallery-title{
+  font-size: 30px;
+  color: #FFFFFF;
+  font-family: "Cal-sans";
+}
+.gallery-description{
+    font-size: 20px;
+    color: #BBBBBB;
+    font-family: "Poiret-one";
+}
+
+
+
  .gallery-section {
     text-align: center;
     padding: 60px 20px;
@@ -213,11 +235,11 @@ height: 34px;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(1, 1, 1, 0.6);
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
 }
 
 /* Image styling inside lightbox */
@@ -225,8 +247,8 @@ height: 34px;
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  transition: transform 3s ease-in;
 }
 
 /* Close button (X) */
@@ -247,4 +269,154 @@ height: 34px;
 
 .nav-bar, .Icon-container, .Home-button-container {
   z-index: 99999;
+}
+
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* 🔹 Navigation Bar */
+  .nav-bar {
+
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    left: 7%;
+    top: -5%;
+    height: 85px;
+    gap: 20px;
+    border-radius: 25px;
+    background-color: #161616;
+    position: fixed;     
+
+  }
+
+  .Nav-link {
+    font-size: 22px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Cal-sans";
+  }
+
+
+  /* 🔹 Icon Container */
+  .Icon-container {
+    display: none;
+  }
+
+  .Gmail-icon img,
+  .Linkedin-icon img,
+  .Github-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* 🔹 Home Button */
+  .Home-button-container {
+    top: 90px;
+    left: 80%;
+    height: 35px;
+    width: 35px;
+  }
+
+  .Icon-home {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* 🔹 Gallery Section */
+  .gallery-section {
+    padding: 40px 10px;
+  }
+
+  .gallery-title {
+    font-size: 24px;
+  }
+
+  .gallery-description {
+    font-size: 16px;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .gallery-item img {
+    border-radius: 6px;
+  }
+
+  /* 🔹 Lightbox Image */
+  .lightbox-img {
+    max-width: 95%;
+    max-height: 80%;
+  }
+
+  /* 🔹 Toast Message */
+  .toast {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 400px;
+  }
+}
+
+
+/* 📱 Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+
+  .nav-bar {
+   width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    left: 7%;
+    top: -5%;
+    height: 85px;
+    gap: 20px;
+    border-radius: 25px;
+    background-color: #161616;
+    position: fixed;  
+  }
+
+  .Nav-link {
+    font-size: 22px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Cal-sans";
+  }
+
+  .Icon-container {
+    left: 70%;
+    gap: 8px;
+  }
+
+  .Home-button-container {
+    left: 75%;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-title {
+    font-size: 20px;
+  }
+
+  .gallery-description {
+    font-size: 14px;
+  }
+
+  .toast {
+    font-size: 14px;
+    margin-top: 300px;
+  }
 }
